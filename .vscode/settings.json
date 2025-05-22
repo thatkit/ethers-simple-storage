@@ -1,0 +1,13 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[solidity]": {
+        "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+    },
+    "editor.formatOnSave": true,
+    "solidity.compileUsingRemoteVersion": "v0.8.7+commit.e28d00a7"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ethers-simple-storage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "solcjs --bin --abi --include-path /node_modules --base-path . -o . SimpleStorage.sol"
+  },
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "solc": "0.8.7-fixed"
+  }
+}
