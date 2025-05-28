@@ -29,6 +29,8 @@
     "dotenv": "^16.5.0",
     "hardhat": "^2.24.0",
     "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^3.5.3",
+    "prettier-plugin-solidity": "^2.0.0",
     "solidity-coverage": "^0.8.1",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.0",

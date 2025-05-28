@@ -4,11 +4,17 @@ import { readFile } from 'fs/promises';
 import 'dotenv/config';
 import abi from './SimpleStorage_sol_SimpleStorage.json';
 
-const provider = new JsonRpcProvider('http://127.0.0.1:8545/');
+// local hardhat network
+// const provider = new JsonRpcProvider('http://127.0.0.1:8545/');
+
+// infura sepolia testnet
+const provider = new JsonRpcProvider(`https://sepolia.infura.io/v3/${process.env.INFURA_API_KEY}`);
 
 const main = async () => {
   strict(process.env.PRIVATE_KEY, 'must set PRIVATE_KEY');
 
+  // for more robust security
+  // Wallet.fromEncryptedJson can be used
   const deployer = new Wallet(process.env.PRIVATE_KEY, provider);
 
   const binary = await readFile(
